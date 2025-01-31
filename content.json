@@ -1,0 +1,121 @@
+{
+"intents": [
+    {
+        "tag": "greeting",
+        "input": ["hello", "hi", "hey", "hi there", "greetings", "is this the sevak organization", "is this the sevak's chatbot", "hey there"],
+        "responses": [
+            "Hi, welcome to the Sevak platform! How can I help you today?",
+            "Hello! How can I assist you in finding work or posting a job?",
+            "Hi! You can find jobs or hire workers here.",
+            "Welcome to Sevak! Are you looking for a job or hiring workers?"
+        ]
+    },
+    {
+        "tag": "post_job",
+        "input": ["post a job", "I need a worker", "hire a worker", "need a daily wage worker", "I want to post a job", "post job for workers"],
+        "responses": [
+            "I can help you post a job! Please provide the job details including the task, location, and working hours.",
+            "What kind of job are you looking to post? Let me know, and I'll help you set it up.",
+            "Please provide details about the job you need to post, and I'll guide you through the process."
+        ]
+    },
+    {
+        "tag": "find_worker",
+        "input": ["find a worker", "looking for workers", "hire someone", "find a daily wage worker", "workers near me", "I'm looking for work"],
+        "responses": [
+            "I can help you find workers. Please let me know the job details, including location and tasks.",
+            "Please tell me the type of work you're looking for and the location, and I'll find workers for you.",
+            "Looking for workers? Let me know the job description and location to get started."
+        ]
+    },
+    {
+        "tag": "worker_availability",
+        "input": ["are there workers available?", "when can workers start?", "worker availability", "are there workers near me?"],
+        "responses": [
+            "I can help you with worker availability. Let me know the type of work you need and the location.",
+            "Please specify the work and location so I can check the availability of workers for you.",
+            "I can search for available workers in your area. Please provide the details of the job and location."
+        ]
+    },
+    {
+        "tag": "payment_info",
+        "input": ["how do I pay workers?", "payment for workers", "worker wages", "daily wages payment", "how much do workers get paid?", "salary details"],
+        "responses": [
+            "Payment details are discussed directly between employers and workers. The wage varies by job and location.",
+            "The payment for daily wage workers can be agreed upon before work starts. Let me know if you need help setting this up.",
+            "Wages depend on the job type and location. Please specify your work category for more details."
+        ]
+    },
+    {
+        "tag": "job_updates",
+        "input": ["status of my job", "is my job posted?", "check job status", "has the job been listed?", "check status", "has my work been listed?"],
+        "responses": [
+            "I'll check the status of your job posting. Please hold on for a moment.",
+            "Let me check for you. Is there anything else you'd like to update regarding the job?",
+            "Let me fetch the latest updates for you on your job listing."
+        ]
+    },
+    {
+        "tag": "help",
+        "input": ["help", "What services do your platform offer ? ","I need assistance", "how does this work?", "what is Sevak?", "can you assist me?", "I don't understand"],
+        "responses": [
+            "Sevak helps you find workers or daily wage jobs in your area. Let me know what you're looking for.",
+            "Sevak connects workers with employers looking for daily wage jobs. How can I assist you today?",
+            "Sevak offers wide range of services , you can give a look in the services page in our website"
+        ]
+    },
+    {
+            "tag": "contact",
+            "input": ["how can i contact to customer service", "can I speak to human"],
+            "responses": [
+                "Sure! You can contact our customer service email us at vinaykosanam123@gmail.com.",
+                "Our support team is available 24/7. chat with a live agent."
+            ]
+        },
+    {
+            "tag": "location",
+            "input": ["bhimavaram","tanuku","visakhapatnam","Rajahmundry"],
+            "responses": [
+                "Hold on a moment, I will provide you with the webpage URL.",
+                "Sure! You can find more details here: [website_link].",
+                "For more information about our services in {location}, visit: [website_link]."
+            ]
+        },
+        {
+    "tag": "account",
+    "input": ["I can't log in", "forgot password", "how do I reset my password?", "account locked"],
+    "responses": [
+        "If you're having trouble logging in, try resetting your password here: [reset_link]",
+        "Forgot your password? No worries! Click here to reset: [reset_link]",
+        "If your account is locked, please contact support at support@sevak.com."
+    ]
+},
+    {
+        "tag": "worker_verification",
+        "input": ["verify worker", "check worker details", "how do I confirm a worker's experience?", "worker verification", "check worker qualifications"],
+        "responses": [
+            "Workers are listed with their experience and skills. You can check their profile before hiring.",
+            "We verify workers based on their past job history and employer ratings.",
+            "For verification, you can request worker references or past job details."
+        ]
+    },
+    {
+        "tag": "goodbye",
+        "input": ["bye", "goodbye", "see you", "take care", "thank you", "bye for now", "see you later"],
+        "responses": [
+            "Goodbye! Have a great day!",
+            "Take care, and feel free to reach out anytime you need help!",
+            "Bye! Thanks for using the Sevak platform."
+        ]
+    },
+    {
+        "tag": "not_understood",
+        "input": ["huh?", "I don't understand", "what?", "could you clarify?", "I didn't get that"],
+        "responses": [
+            "Sorry, I didn't quite get that. Could you rephrase?",
+            "I'm not sure I understand, can you clarify?",
+            "Could you please explain that in a different way?"
+        ]
+    }
+]
+}
