@@ -1,0 +1,4 @@
+__pycache__/
+*.pyc
+.DS_Store
+sevak_chatbot.h5  # Prevents pushing large model file
