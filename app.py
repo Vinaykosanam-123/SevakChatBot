@@ -12,7 +12,7 @@ from nltk.corpus import stopwords
 from sklearn.model_selection import train_test_split
 from tensorflow.keras.layers import Input, Embedding, LSTM, Dense, GlobalMaxPooling1D, Flatten, Conv1D
 from tensorflow.keras.models import Model
-import matplotlib.pyplot as plt
+
 from sklearn.preprocessing import LabelEncoder
 
 # Load the intents file
