@@ -1,70 +1,125 @@
 {
-"intents": [
-    {
-        "tag": "greeting",
-        "input": ["hello", "hi", "hey", "hi there", "greetings", "is this the sevak organization", "is this the sevak's chatbot", "hey there"],
-        "responses": [
-            "Hi, welcome to the Sevak platform! How can I help you today?",
-            "Hello! How can I assist you in finding work or posting a job?",
-            "Hi! You can find jobs or hire workers here.",
-            "Welcome to Sevak! Are you looking for a job or hiring workers?"
-        ]
+    "intents": [
+        {
+            "tag": "greeting",
+            "input": ["hello", "hi there", "hey", "nice to meet you", "is this the sevak organization", "is this the sevak's chatbot", "hey there"],
+            "responses": [
+                "Hi, Welcome to the sevak platform",
+                "Hi! Welcome to the platform where you can provide work for the workers",
+                "Hi buddy, how can I help you"
+            ]
+        },
+        {
+            "tag": "post_job",
+            "input": ["post a job", "I need a worker", "hire a worker", "need a daily wage worker", "I want to post a job", "post job for workers"],
+            "responses": [
+                "I can help you post a job! Please provide the job details including the task, location, and working hours.",
+                "What kind of job are you looking to post? Let me know, and I'll help you set it up.",
+                "Please provide details about the job you need to post, and I'll guide you through the process."
+    ]
+},
+        {
+            "tag": "owner",
+            "input": ["I need a worker", "I want to post a job", "How can I find workers?",  "post job for workers"],
+            "responses": [
+                "Sure! I can help you post a job. Please provide the details.",
+                "To find workers, let me know the job description and requirements.",
+                "Tell me the kind of work you're offering, and I will post it for you."
+            ]
+        },
+        {
+            "tag": "find_worker",
+            "input": ["find a worker", "looking for workers", "hire someone", "find a daily wage worker", "workers near me", "I'm looking for work"],
+            "responses": [
+                "I can help you find workers. Please let me know the job details, including location and tasks.",
+                "Please tell me the type of work you're looking for and the location, and I'll find workers for you.",
+                "Looking for workers? Let me know the job description and location to get started."
+    ]
+   },
+        {
+            "tag": "worker",
+            "input": ["I am looking for work", "where can i found work?", "How can I find work?",  "How can i apply for job?"],
+            "responses": [
+                "Sure! I can help you in finding  a job. Please provide the details.",
+                "To find jobs, let me know the job description.",
+                "you will be redirected to job section"
+            ]
+        },
+
+        {
+            "tag": "category",
+            "input": ["carpenter", "mansion", "plumber",  "tailor"],
+            "responses": [
+                "you will be redirected to workers section , Please give a minute ",
+                "you can visit the workers page in our site"
+            ]
+        },
+        {
+            "tag": "worker_availability",
+            "input": ["are there workers available?", "when can workers start?", "worker availability", "are there workers near me?"],
+            "responses": [
+                "I can help you with worker availability. Let me know the type of work you need and the location.",
+                "Please specify the work and location so I can check the availability of workers for you.",
+                "I can search for available workers in your area. Please provide the details of the job and location."
+            ]
+        },
+        {
+            "tag": "payment_info",
+            "input": ["how do I pay workers?", "payment for workers", "worker wages", "daily wages payment", "how much do workers get paid?", "salary details"],
+            "responses": [
+                "Payment details are discussed directly between employers and workers. The wage varies by job and location.",
+                "The payment for daily wage workers can be agreed upon before work starts. Let me know if you need help setting this up.",
+                "Wages depend on the job type and location. Please specify your work category for more details."
+            ]
+        },
+        {
+            "tag": "job_updates",
+            "input": ["status of my job", "is my job posted?", "check job status", "has the job been listed?", "check status", "has my work been listed?"],
+            "responses": [
+                "I'll check the status of your job posting. Please hold on for a moment.",
+                "Let me check for you. Is there anything else you'd like to update regarding the job?",
+                "Let me fetch the latest updates for you on your job listing."
+    ]
     },
-    {
-        "tag": "post_job",
-        "input": ["post a job", "I need a worker", "hire a worker", "need a daily wage worker", "I want to post a job", "post job for workers"],
-        "responses": [
-            "I can help you post a job! Please provide the job details including the task, location, and working hours.",
-            "What kind of job are you looking to post? Let me know, and I'll help you set it up.",
-            "Please provide details about the job you need to post, and I'll guide you through the process."
-        ]
-    },
-    {
-        "tag": "find_worker",
-        "input": ["find a worker", "looking for workers", "hire someone", "find a daily wage worker", "workers near me", "I'm looking for work"],
-        "responses": [
-            "I can help you find workers. Please let me know the job details, including location and tasks.",
-            "Please tell me the type of work you're looking for and the location, and I'll find workers for you.",
-            "Looking for workers? Let me know the job description and location to get started."
-        ]
-    },
-    {
-        "tag": "worker_availability",
-        "input": ["are there workers available?", "when can workers start?", "worker availability", "are there workers near me?"],
-        "responses": [
-            "I can help you with worker availability. Let me know the type of work you need and the location.",
-            "Please specify the work and location so I can check the availability of workers for you.",
-            "I can search for available workers in your area. Please provide the details of the job and location."
-        ]
-    },
-    {
-        "tag": "payment_info",
-        "input": ["how do I pay workers?", "payment for workers", "worker wages", "daily wages payment", "how much do workers get paid?", "salary details"],
-        "responses": [
-            "Payment details are discussed directly between employers and workers. The wage varies by job and location.",
-            "The payment for daily wage workers can be agreed upon before work starts. Let me know if you need help setting this up.",
-            "Wages depend on the job type and location. Please specify your work category for more details."
-        ]
-    },
-    {
-        "tag": "job_updates",
-        "input": ["status of my job", "is my job posted?", "check job status", "has the job been listed?", "check status", "has my work been listed?"],
-        "responses": [
-            "I'll check the status of your job posting. Please hold on for a moment.",
-            "Let me check for you. Is there anything else you'd like to update regarding the job?",
-            "Let me fetch the latest updates for you on your job listing."
-        ]
-    },
-    {
-        "tag": "help",
-        "input": ["help", "What services do your platform offer ? ","I need assistance", "how does this work?", "what is Sevak?", "can you assist me?", "I don't understand"],
-        "responses": [
-            "Sevak helps you find workers or daily wage jobs in your area. Let me know what you're looking for.",
-            "Sevak connects workers with employers looking for daily wage jobs. How can I assist you today?",
-            "Sevak offers wide range of services , you can give a look in the services page in our website"
-        ]
-    },
-    {
+        {
+            "tag": "help",
+            "input": ["help", "can you assist me?", "need help", "how does this work?", "I don't understand"],
+            "responses": [
+                "Of course! How can I assist you?",
+                "Please let me know what you need help with, and I'll do my best.",
+                "I'm here to help. What can I assist you with?"
+            ]
+        },
+        {
+            "tag": "status",
+            "input": ["check status", "is my job posted?", "has my work been listed?", "status of my job"],
+            "responses": [
+                "Let me check the status for you. Please wait a moment.",
+                "I'll fetch the latest updates for you on your job listing.",
+                "Checking the status now, just a second."
+            ]
+        },
+        {
+            "tag": "goodbye",
+            "input": ["bye", "goodbye", "see you later", "take care", "bye for now"],
+            "responses": [
+                "Goodbye! Have a great day!",
+                "Take care and see you next time!",
+                "Bye! Thanks for using the sevak platform."
+            ]
+        },
+        {
+            "tag": "feedback",
+            "input": ["feedback", "suggestion", "rate service", "how was my experience", "provide feedback"],
+            "responses": [
+                "We'd love to hear your feedback! Please share your thoughts.",
+                "Your opinion matters. Please provide your suggestions to improve our service.",
+                "How was your experience with us? We'd appreciate your feedback."
+            ]
+        },
+
+
+        {
             "tag": "contact",
             "input": ["how can i contact to customer service", "can I speak to human"],
             "responses": [
@@ -97,25 +152,17 @@
             "Workers are listed with their experience and skills. You can check their profile before hiring.",
             "We verify workers based on their past job history and employer ratings.",
             "For verification, you can request worker references or past job details."
-        ]
-    },
-    {
-        "tag": "goodbye",
-        "input": ["bye", "goodbye", "see you", "take care", "thank you", "bye for now", "see you later"],
-        "responses": [
-            "Goodbye! Have a great day!",
-            "Take care, and feel free to reach out anytime you need help!",
-            "Bye! Thanks for using the Sevak platform."
-        ]
-    },
-    {
-        "tag": "not_understood",
-        "input": ["huh?", "I don't understand", "what?", "could you clarify?", "I didn't get that"],
-        "responses": [
-            "Sorry, I didn't quite get that. Could you rephrase?",
-            "I'm not sure I understand, can you clarify?",
-            "Could you please explain that in a different way?"
-        ]
-    }
 ]
+},
+
+        {
+            "tag": "not_understood",
+            "input": ["huh?", "I don't understand", "what?", "could you clarify?", "I didn't get that"],
+            "responses": [
+                "Sorry, I didn't quite get that. Could you rephrase?",
+                "I'm not sure I understand, can you clarify?",
+                "Could you please explain that in a different way?"
+            ]
+        }
+    ]
 }
